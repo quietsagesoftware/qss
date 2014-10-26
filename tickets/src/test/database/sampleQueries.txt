@@ -1,0 +1,4 @@
+db.item.aggregate([
+{$match:{"user":"5376e5306283df5bc1fe74d9"}},
+{$group:{"_id":"$collection", numItems:{$sum:1}}}
+])

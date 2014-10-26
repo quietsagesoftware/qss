@@ -1,0 +1,66 @@
+{
+    name : "Snowstorm 20 Backpack - 1220 cu in", itemId: "", state: "own", privacy: "public", manufacturer: "Lowe Alpine"
+}
+
+{
+    name : "The Next Thing on My List",
+    itemId: "", // ISBN
+    state: "own|want",
+    privacy: "public|private",
+    manufacturer: "patagonia.com", //publisher?
+    notes: "",
+    tags: [},
+	author: "Jill Smolinski",
+	
+}
+{
+    name : "The Next Thing on My List",
+    itemId: "", // ISBN
+    state: "own|want",
+    privacy: "public",
+    manufacturer: "", //publisher?
+    notes: "Some sites list only in alphabetical order, not sequence order, or by series",
+    tags: [},
+	author: "Suzanne Brockmann",
+	series: "Troubleshooters",
+	sequence: "1, 2, 3  OR  A, B. C depending on site, other???",
+	format: "hardcover, pocket, trade",
+	found: "true/false,  what about who found it???  Collaboration field.",
+	alreadyHave: "true/false"
+}
+
+Paula - 5376e5306283df5bc1fe74d9
+
+***HAVE
+*****************
+Nora Roberts - Jove
+{name : "Once Upon a Kiss", itemId: "0515133868", state: "own", user: "5376e5306283df5bc1fe74d9", author: "Nora Roberts", series: "a", sequence: "2002"}
+{name : "Once Upon a Dream", itemId: "051512947X", state: "own", user: "5376e5306283df5bc1fe74d9", author: "Nora Roberts", series: "a", sequence: "2000"}
+{name : "Once Upon a Star", itemId: "0515127000", state: "own", user: "5376e5306283df5bc1fe74d9", author: "Nora Roberts", series: "a", sequence: "1999"}
+{name : "Once Upon a Castle", itemId: "0515122416", state: "own", user: "5376e5306283df5bc1fe74d9", author: "Nora Roberts", series: "a", sequence: "1998"}
+
+*****************
+JD Robb - Jove
+{name : "Silent Night", itemId: "0515123854", state: "own", user: "5376e5306283df5bc1fe74d9", author: "JD Robb", series: "b", sequence: "1998"}
+{name : "Out of this World", itemId: "0515131091", state: "own", user: "5376e5306283df5bc1fe74d9", author: "JD Robb", series: "b", sequence: "2001"}
+{name : "Bump in the Night", itemId: "0515141178", state: "own", user: "5376e5306283df5bc1fe74d9", author: "JD Robb", series: "b", sequence: "2006"}
+{name : "Suite 606", itemId: "978-0425224441", state: "own", user: "5376e5306283df5bc1fe74d9", author: "JD Robb", series: "b", sequence: "2008"}
+{name : "The Other Side", itemId: "978-0515148671", state: "own", user: "5376e5306283df5bc1fe74d9", author: "JD Robb", series: "b", sequence: "2010"}
+{name : "The Unquiet", itemId: "978-0515149982", state: "own", user: "5376e5306283df5bc1fe74d9", author: "JD Robb", series: "b", sequence: "2011"}
+
+***WANT
+*****************
+Nora Roberts
+ 
+{name : "Once Upon A Midnight", itemId: "0515136190", state: "want", found: false, user: "5376e5306283df5bc1fe74d9", author: "Nora Roberts", series: "a", sequence: "2003"}
+{name : "Once Upon A Rose", itemId: "0515131660", state: "want", found: false, user: "5376e5306283df5bc1fe74d9", author: "Nora Roberts", series: "a", sequence: "2001"}
+
+*****************
+JD Robb
+ 
+{name : "Dead of Night", itemId: "978-0515143676", state: "want", found: false, user: "5376e5306283df5bc1fe74d9", author: "JD Robb", series: "b", sequence: "2007"}
+{name : "The Lost", itemId: "978-0515147186", state: "want", found: false, user: "5376e5306283df5bc1fe74d9", author: "JD Robb", series: "b", sequence: "2009"}
+{name : "Mirror Mirror", itemId: "978-0515154078", state: "want", found: false, user: "5376e5306283df5bc1fe74d9", author: "JD Robb", series: "b", sequence: "2013"}
+
+ALL Paula's documents get these values
+db.item.update({"user": "5376e5306283df5bc1fe74d9"}, {$set:{"privacy":"public", "manufacturer": "Jove", "format":"pocket"}}, {"multi":true});
